@@ -5,3 +5,7 @@ npm install express
 
 npm install cors
 node server.js
+
+npm install mongoose
+#HTTPie is an alternative tool that provides a cleaner syntax for testing APIs. First, you'll need to install it if it's not already installed:
+pip install httpie //Requreid python
