@@ -83,5 +83,21 @@ const studentRegisterDetails = async (req, res) => {
         res.status(500).json({ message: 'Error registering student', error: error.message });
     }
 };
+const getAllRegistrationDetails = async (req, res) => {
+    try {
+        // Fetch all student records from the database
+        const registrations = await StudentDetails.find();
+        
+        // Send success response with all registrations
+        res.status(200).json({
+            message: 'All registrations retrieved successfully!',
+            data: registrations,
+        });
+    } catch (error) {
+        // Handle any errors that occur during fetching
+        console.error('Error fetching registrations:', error);
+        res.status(500).json({ message: 'Error fetching registrations', error: error.message });
+    }
+};
 
-module.exports = { studentRegisterDetails,studentRegisterDetailsWithImage,getStudent,deleteStudent, getAllStudents,updateStudentById }; // Export the function
+module.exports = { studentRegisterDetails,studentRegisterDetailsWithImage,getAllRegistrationDetails }; // Export the function
