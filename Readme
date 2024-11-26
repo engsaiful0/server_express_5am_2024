@@ -12,3 +12,7 @@ pip install httpie //Requreid python
 
 #for image
 npm install multer 
+
+npm install  bcryptjs jsonwebtoken  dotenv
+#nodemon is a tool that automatically restarts your Node.js application when it detects changes in your project files.
+npm install --save-dev nodemon
