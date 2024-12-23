@@ -14,5 +14,19 @@ pip install httpie //Requreid python
 npm install multer 
 
 npm install  bcryptjs jsonwebtoken  dotenv
+npm install jsonwebtoken@latest
+
 #nodemon is a tool that automatically restarts your Node.js application when it detects changes in your project files.
 npm install --save-dev nodemon
+
+#Consider adding security headers for better protection in a production environment. You can use the helmet package for this:
+npm install helmet
+npm install dotenv
+
+#For stripe payment intent
+npm install stripe
+
+Card: 4242 4242 4242
+dd/MM: 12/34
+CVC:123
+ZIP: 12345
